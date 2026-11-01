@@ -1,0 +1,23 @@
+{
+  "name": "desafio-qa-cypress",
+  "version": "1.0.0",
+  "description": "Desafio QA Automation (Accenture) - Cypress + Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:api": "cypress run --spec cypress/e2e/api/**/*.feature",
+    "test:web": "cypress run --spec cypress/e2e/web/**/*.feature",
+    "cy:open": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^28.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@faker-js/faker": "^10.6.0",
+    "cypress": "^16.2.1",
+    "esbuild": "^0.28.2"
+  }
+}
